@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oonstitch | Crochet &amp; Beyond | Handmade Crochet</title>
+<meta name="description" content="Discover beautiful handmade crochet creations by Oonstitch. Customisation available, along with bulk and corporate orders.">
+<meta property="og:title" content="Oonstitch | Crochet & Beyond">
+<meta property="og:description" content="Handmade crochet creations from Delhi, India. Customisation, bulk & corporate orders available.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,560;0,9..144,650;1,9..144,450;1,9..144,560&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF6EF;
+    --paper:#FFFDFB;
+    --blush:#F3E4D8;
+    --blush-deep:#E9D2C0;
+    --plum:#4A2436;
+    --plum-deep:#341826;
+    --mustard:#D9A441;
+    --mustard-soft:#EFC978;
+    --sage:#6E7A57;
+    --ink:#2A211F;
+    --ink-soft:#6b5f5a;
+    --line: rgba(42,33,31,0.12);
+    --radius-organic: 62% 38% 55% 45% / 48% 45% 55% 52%;
+    --shadow-soft: 0 18px 40px -20px rgba(42,20,30,0.35);
+    --shadow-lift: 0 26px 60px -24px rgba(42,20,30,0.45);
+    --maxw: 1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Manrope', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;margin:0;padding:0;}
+  button{font-family:inherit;cursor:pointer;}
+
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:560;
+    color:var(--plum-deep);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  h2{font-size:clamp(1.9rem,3.6vw,2.9rem);}
+  h3{font-size:clamp(1.2rem,2vw,1.5rem); font-weight:560;}
+  p{margin:0;}
+
+  .section{
+    padding:96px 24px;
+    position:relative;
+  }
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+  }
+  .eyebrow{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:450;
+    color:var(--sage);
+    font-size:1.05rem;
+    margin-bottom:14px;
+    display:inline-block;
+  }
+  .lede{
+    color:var(--ink-soft);
+    font-size:1.08rem;
+    max-width:560px;
+    margin-top:16px;
+  }
+
+  /* stitch divider */
+  .stitch-divider{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    justify-content:center;
+    padding:6px 0;
+    opacity:0.6;
+  }
+  .stitch-divider span{
+    width:6px;height:6px;border-radius:50%;
+    background:var(--mustard);
+    display:inline-block;
+  }
+  .stitch-divider span:nth-child(3n){background:var(--sage);}
+  .stitch-divider span:nth-child(5n){background:var(--plum);}
+
+  /* buttons */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 28px;
+    border-radius:100px;
+    font-weight:700;
+    font-size:0.95rem;
+    border:1.5px solid transparent;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    white-space:nowrap;
+  }
+  .btn svg{width:18px;height:18px;flex-shrink:0;}
+  .btn-primary{
+    background:var(--plum);
+    color:var(--paper);
+    box-shadow:var(--shadow-soft);
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:var(--shadow-lift);}
+  .btn-ghost{
+    background:transparent;
+    color:var(--plum);
+    border-color:var(--plum);
+  }
+  .btn-ghost:hover{background:var(--plum); color:var(--paper); transform:translateY(-2px);}
+  .btn-mustard{
+    background:var(--mustard);
+    color:var(--plum-deep);
+    box-shadow:0 16px 32px -18px rgba(217,164,65,0.7);
+  }
+  .btn-mustard:hover{transform:translateY(-2px);}
+  .btn-sm{padding:11px 20px; font-size:0.85rem;}
+  .btn-block{width:100%; justify-content:center;}
+
+  /* ===== NAV ===== */
+  header.nav{
+    position:sticky; top:0; z-index:200;
+    background:rgba(251,246,239,0.88);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 24px;
+  }
+  .logo{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:560;
+    font-size:1.6rem;
+    color:var(--plum-deep);
+  }
+  .logo span{color:var(--mustard); font-style:normal;}
+  .nav-links{
+    display:flex;
+    gap:34px;
+    align-items:center;
+  }
+  .nav-links a{
+    font-size:0.93rem;
+    font-weight:600;
+    color:var(--ink);
+    position:relative;
+    padding:4px 0;
+  }
+  .nav-links a::after{
+    content:'';
+    position:absolute; left:0; bottom:-2px;
+    width:0; height:2px;
+    background:var(--mustard);
+    transition:width .25s ease;
+  }
+  .nav-links a:hover::after{width:100%;}
+  .nav-actions{display:flex; gap:12px; align-items:center;}
+  .icon-btn{
+    width:42px; height:42px;
+    display:flex; align-items:center; justify-content:center;
+    border-radius:50%;
+    background:var(--plum);
+    color:var(--paper);
+    transition:transform .25s ease, background .25s;
+  }
+  .icon-btn.insta{background:var(--plum-deep);}
+  .icon-btn:hover{transform:translateY(-2px) scale(1.05);}
+  .icon-btn svg{width:19px;height:19px;}
+
+  .hamburger{
+    display:none;
+    width:42px;height:42px;
+    border:none;background:transparent;
+    flex-direction:column; align-items:center; justify-content:center; gap:5px;
+  }
+  .hamburger span{
+    width:22px;height:2px;background:var(--plum-deep);
+    transition:transform .3s ease, opacity .3s ease;
+  }
+  .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger.open span:nth-child(2){opacity:0;}
+  .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  .mobile-menu{
+    display:none;
+    flex-direction:column;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    padding:8px 24px 24px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+  }
+  .mobile-menu.open{max-height:520px;}
+  .mobile-menu a{
+    padding:14px 0;
+    border-bottom:1px solid var(--line);
+    font-weight:600;
+    font-family:'Fraunces',serif;
+    font-size:1.05rem;
+    color:var(--plum-deep);
+  }
+  .mobile-menu .mobile-actions{
+    display:flex; gap:12px; margin-top:18px;
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    padding:70px 24px 90px;
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:60px;
+    align-items:center;
+  }
+  .hero-copy .eyebrow{margin-bottom:20px;}
+  .hero h1{
+    font-size:clamp(2.5rem, 5vw, 4.1rem);
+    max-width:640px;
+  }
+  .hero .lede{max-width:480px; font-size:1.12rem;}
+  .hero-ctas{
+    display:flex; gap:16px; margin-top:38px; flex-wrap:wrap;
+  }
+  .hero-tags{
+    display:flex; gap:10px; margin-top:44px; flex-wrap:wrap;
+  }
+  .hero-tags span{
+    font-size:0.78rem; font-weight:700; letter-spacing:0.03em;
+    padding:8px 16px; border-radius:100px;
+    border:1px solid var(--line);
+    color:var(--ink-soft);
+    background:var(--paper);
+  }
+  .hero-visual{
+    position:relative;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .hero-frame{
+    position:relative;
+    width:100%;
+    max-width:440px;
+    transform:rotate(-3deg);
+  }
+  .hero-frame img{
+    width:100%;
+    border-radius:38% 62% 58% 42% / 46% 40% 60% 54%;
+    box-shadow:var(--shadow-lift);
+    border:6px solid var(--paper);
+    aspect-ratio:4/5;
+    object-fit:cover;
+  }
+  .hero-badge{
+    position:absolute;
+    bottom:-22px; left:-30px;
+    background:var(--mustard);
+    color:var(--plum-deep);
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-weight:560;
+    padding:18px 22px;
+    border-radius:50%;
+    width:112px; height:112px;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    font-size:0.95rem;
+    line-height:1.15;
+    box-shadow:0 14px 30px -12px rgba(217,164,65,0.65);
+    transform:rotate(6deg);
+  }
+  .hero-dot{
+    position:absolute; top:-18px; right:10px;
+    width:70px;height:70px;
+    border-radius:50%;
+    background:var(--sage);
+    opacity:0.18;
+  }
+
+  /* fade in */
+  .reveal{
+    opacity:0;
+    transform:translateY(26px);
+    transition:opacity .8s ease, transform .8s ease;
+  }
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ===== ABOUT ===== */
+  .about{background:var(--paper);}
+  .about-inner{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:64px;
+    align-items:center;
+  }
+  .about-img{
+    position:relative;
+  }
+  .about-img img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:var(--shadow-soft);
+    aspect-ratio:4/5;
+    object-fit:cover;
+  }
+  .about-img::after{
+    content:'';
+    position:absolute;
+    inset:18px -18px -18px 18px;
+    border:2px solid var(--mustard);
+    border-radius:20px;
+    z-index:-1;
+  }
+  .about-copy p{margin-top:18px; color:var(--ink-soft); font-size:1.03rem; max-width:520px;}
+  .about-stats{
+    display:flex; gap:36px; margin-top:36px; flex-wrap:wrap;
+  }
+  .about-stats div span{
+    display:block; font-family:'Fraunces',serif; font-size:1.5rem; color:var(--plum); font-weight:650;
+  }
+  .about-stats div small{color:var(--ink-soft); font-size:0.8rem; letter-spacing:0.02em;}
+
+  /* ===== SHOP / COLLECTIONS ===== */
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap;
+    margin-bottom:48px;
+  }
+  .collections-grid{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-auto-rows:150px;
+    gap:18px;
+  }
+  .coll-card{
+    position:relative;
+    border-radius:24px;
+    overflow:hidden;
+    display:block;
+    grid-column:span 3;
+    grid-row:span 2;
+  }
+  .coll-card:nth-child(1){grid-column:span 3; grid-row:span 3;}
+  .coll-card:nth-child(2){grid-column:span 3; grid-row:span 2;}
+  .coll-card:nth-child(3){grid-column:span 3; grid-row:span 2;}
+  .coll-card:nth-child(4){grid-column:span 2; grid-row:span 2;}
+  .coll-card:nth-child(5){grid-column:span 2; grid-row:span 2;}
+  .coll-card:nth-child(6){grid-column:span 2; grid-row:span 2;}
+  .coll-card img{
+    width:100%; height:100%; object-fit:cover;
+    transition:transform .6s ease;
+  }
+  .coll-card:hover img{transform:scale(1.07);}
+  .coll-card::before{
+    content:'';
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(42,20,30,0) 40%, rgba(42,20,30,0.78) 100%);
+    z-index:1;
+  }
+  .coll-label{
+    position:absolute; left:20px; bottom:18px; z-index:2;
+    color:#fff;
+  }
+  .coll-label h3{color:#fff; font-size:1.15rem;}
+  .coll-label span{
+    font-size:0.78rem; color:rgba(255,255,255,0.78); font-weight:600;
+  }
+
+  /* ===== FEATURED PRODUCTS ===== */
+  .products{background:var(--paper);}
+  .product-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:26px;
+  }
+  .product-card{
+    background:var(--cream);
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    transition:transform .3s ease, box-shadow .3s ease;
+    display:flex;
+    flex-direction:column;
+  }
+  .product-card:hover{transform:translateY(-6px); box-shadow:var(--shadow-soft);}
+  .product-img{
+    aspect-ratio:1/1;
+    overflow:hidden;
+    position:relative;
+  }
+  .product-img img{
+    width:100%;height:100%;object-fit:cover;
+    transition:transform .5s ease;
+  }
+  .product-card:hover .product-img img{transform:scale(1.06);}
+  .product-body{
+    padding:20px 20px 22px;
+    display:flex; flex-direction:column; gap:10px; flex:1;
+  }
+  .product-body h3{font-size:1.08rem;}
+  .product-body p{color:var(--ink-soft); font-size:0.88rem; flex:1;}
+  .price-tag{
+    font-size:0.78rem; font-weight:700; color:var(--sage);
+    letter-spacing:0.02em;
+  }
+  .product-cta{
+    margin-top:6px;
+    display:inline-flex; align-items:center; gap:8px;
+    color:var(--plum); font-weight:700; font-size:0.86rem;
+    border:1.5px solid var(--plum); border-radius:100px;
+    padding:10px 16px; justify-content:center;
+    transition:background .25s, color .25s;
+  }
+  .product-cta:hover{background:var(--plum); color:var(--paper);}
+  .product-cta svg{width:15px;height:15px;}
+
+  /* ===== CUSTOMISATION ===== */
+  .customisation{
+    background:var(--plum-deep);
+    color:var(--cream);
+    overflow:hidden;
+  }
+  .cust-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .customisation .eyebrow{color:var(--mustard-soft);}
+  .customisation h2{color:var(--cream);}
+  .customisation .lede{color:rgba(251,246,239,0.75); max-width:none;}
+  .cust-badge{
+    display:inline-block;
+    background:rgba(217,164,65,0.16);
+    color:var(--mustard-soft);
+    border:1px solid rgba(217,164,65,0.4);
+    padding:7px 16px;
+    border-radius:100px;
+    font-size:0.82rem;
+    font-weight:700;
+    margin-bottom:22px;
+  }
+  .cust-img{position:relative;}
+  .cust-img img{
+    width:100%; max-width:420px; margin:0 auto;
+    border-radius:26px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.55);
+    aspect-ratio:4/5;
+    object-fit:cover;
+    border:6px solid rgba(251,246,239,0.08);
+  }
+  .cust-cta{margin-top:32px;}
+
+  /* ===== BULK ===== */
+  .bulk{background:var(--blush);}
+  .bulk-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .bulk-img img{
+    width:100%;
+    border-radius:22px;
+    box-shadow:var(--shadow-soft);
+    aspect-ratio:5/4;
+    object-fit:cover;
+  }
+  .bulk-copy .lede{max-width:520px;}
+  .bulk-points{
+    display:flex; flex-direction:column; gap:14px;
+    margin:28px 0 34px;
+  }
+  .bulk-points li{
+    display:flex; gap:12px; align-items:flex-start;
+    font-weight:600; color:var(--ink);
+    font-size:0.96rem;
+  }
+  .bulk-points svg{width:20px;height:20px; flex-shrink:0; color:var(--sage); margin-top:2px;}
+
+  /* ===== INSTAGRAM CTA ===== */
+  .insta-cta{
+    background:var(--plum);
+    color:var(--cream);
+  }
+  .insta-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+    align-items:center;
+  }
+  .insta-cta h2{color:var(--cream);}
+  .insta-cta .eyebrow{color:var(--mustard-soft);}
+  .insta-cta p.lede{color:rgba(251,246,239,0.78); max-width:480px;}
+  .insta-handle{
+    display:inline-flex; align-items:center; gap:10px;
+    margin-top:8px; margin-bottom:24px;
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.2rem; color:var(--mustard-soft);
+  }
+  .insta-mosaic{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+  }
+  .insta-mosaic a{
+    display:block; border-radius:16px; overflow:hidden; aspect-ratio:1/1;
+    position:relative;
+  }
+  .insta-mosaic img{width:100%;height:100%;object-fit:cover; transition:transform .5s ease;}
+  .insta-mosaic a:hover img{transform:scale(1.08);}
+  .insta-mosaic a:first-child{grid-column:span 2; grid-row:span 2;}
+  .insta-mosaic a::before{
+    content:'';
+    position:absolute; inset:0;
+    background:rgba(74,36,54,0.15);
+    opacity:0; transition:opacity .3s ease;
+  }
+  .insta-mosaic a:hover::before{opacity:1;}
+
+  /* ===== GALLERY ===== */
+  .gallery{background:var(--paper);}
+  .gallery-grid{
+    columns:4 220px;
+    column-gap:18px;
+  }
+  .gallery-item{
+    break-inside:avoid;
+    margin-bottom:18px;
+    border-radius:18px;
+    overflow:hidden;
+    cursor:zoom-in;
+    position:relative;
+  }
+  .gallery-item img{
+    width:100%; display:block;
+    transition:transform .5s ease;
+  }
+  .gallery-item:hover img{transform:scale(1.06);}
+  .gallery-item::after{
+    content:'';
+    position:absolute; inset:0;
+    background:rgba(74,36,54,0);
+    transition:background .3s ease;
+  }
+  .gallery-item:hover::after{background:rgba(74,36,54,0.12);}
+
+  .lightbox{
+    position:fixed; inset:0; z-index:500;
+    background:rgba(26,14,20,0.92);
+    display:none;
+    align-items:center; justify-content:center;
+    padding:40px;
+    opacity:0;
+    transition:opacity .3s ease;
+  }
+  .lightbox.open{display:flex; opacity:1;}
+  .lightbox img{
+    max-width:min(880px, 90vw);
+    max-height:85vh;
+    border-radius:12px;
+    box-shadow:0 30px 80px rgba(0,0,0,0.5);
+  }
+  .lightbox-close, .lightbox-nav{
+    position:absolute;
+    background:rgba(251,246,239,0.12);
+    border:1px solid rgba(251,246,239,0.3);
+    color:#fff;
+    border-radius:50%;
+    width:46px;height:46px;
+    display:flex;align-items:center;justify-content:center;
+    transition:background .2s;
+  }
+  .lightbox-close:hover, .lightbox-nav:hover{background:rgba(251,246,239,0.25);}
+  .lightbox-close{top:24px; right:24px;}
+  .lightbox-nav.prev{left:24px; top:50%; transform:translateY(-50%);}
+  .lightbox-nav.next{right:24px; top:50%; transform:translateY(-50%);}
+  .lightbox-nav svg, .lightbox-close svg{width:20px;height:20px;}
+
+  /* ===== REVIEWS ===== */
+  .reviews{
+    background:var(--cream);
+    text-align:center;
+  }
+  .reviews .wrap{max-width:680px;}
+  .reviews .eyebrow{}
+  .reviews p.lede{margin-left:auto; margin-right:auto;}
+  .reviews .btn{margin-top:32px;}
+  .stars{
+    display:flex; gap:6px; justify-content:center; margin-bottom:18px; color:var(--mustard);
+  }
+  .stars svg{width:22px;height:22px;}
+
+  /* ===== SOCIAL FOLLOW ===== */
+  .social{background:var(--blush);}
+  .social-inner{text-align:center;}
+  .social-buttons{
+    display:flex; justify-content:center; gap:20px; margin-top:38px; flex-wrap:wrap;
+  }
+  .social-card{
+    display:flex; flex-direction:column; align-items:center; gap:12px;
+    background:var(--paper);
+    padding:28px 34px;
+    border-radius:20px;
+    box-shadow:var(--shadow-soft);
+    min-width:150px;
+    transition:transform .25s ease;
+  }
+  .social-card:hover{transform:translateY(-6px);}
+  .social-card .ic{
+    width:52px;height:52px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--plum); color:var(--cream);
+  }
+  .social-card .ic svg{width:24px;height:24px;}
+  .social-card span{font-weight:700; font-size:0.92rem;}
+  .social-card small{color:var(--ink-soft); font-size:0.8rem;}
+
+  /* ===== CONTACT ===== */
+  .contact{background:var(--plum-deep); color:var(--cream);}
+  .contact-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+  }
+  .contact h2{color:var(--cream);}
+  .contact .eyebrow{color:var(--mustard-soft);}
+  .contact-brand p{color:rgba(251,246,239,0.7); margin-top:16px; max-width:380px;}
+  .contact-list{margin-top:30px; display:flex; flex-direction:column; gap:18px;}
+  .contact-list a{
+    display:flex; align-items:center; gap:14px;
+    font-weight:600;
+    color:var(--cream);
+    padding-bottom:14px;
+    border-bottom:1px solid rgba(251,246,239,0.14);
+    transition:color .2s;
+  }
+  .contact-list a:hover{color:var(--mustard-soft);}
+  .contact-list .ic{
+    width:40px;height:40px;border-radius:50%;
+    background:rgba(251,246,239,0.1);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .contact-list .ic svg{width:18px;height:18px;}
+  .contact-actions{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  }
+  .contact-actions .btn{width:100%;}
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:#26121D;
+    color:rgba(251,246,239,0.72);
+    padding:64px 24px 28px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:48px;
+    padding-bottom:40px;
+    border-bottom:1px solid rgba(251,246,239,0.1);
+  }
+  .footer-logo{
+    font-family:'Fraunces',serif; font-style:italic; font-size:1.5rem; color:var(--cream);
+  }
+  .footer-logo span{color:var(--mustard);}
+  .footer-grid p{margin-top:14px; max-width:280px; font-size:0.9rem;}
+  .footer-col h4{
+    font-family:'Manrope',sans-serif; font-size:0.82rem; text-transform:uppercase; letter-spacing:0.06em;
+    color:rgba(251,246,239,0.5); margin-bottom:18px; font-weight:700;
+  }
+  .footer-col ul{display:flex; flex-direction:column; gap:12px;}
+  .footer-col a{font-size:0.92rem; transition:color .2s;}
+  .footer-col a:hover{color:var(--mustard-soft);}
+  .footer-social{display:flex; gap:12px; margin-top:20px;}
+  .footer-social a{
+    width:38px;height:38px;border-radius:50%;
+    background:rgba(251,246,239,0.08);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .footer-social a svg{width:16px;height:16px;}
+  .footer-social a:hover{background:rgba(251,246,239,0.18);}
+  .footer-bottom{
+    display:flex; justify-content:space-between; align-items:center;
+    padding-top:24px; font-size:0.82rem; flex-wrap:wrap; gap:12px;
+  }
+
+  /* floating whatsapp */
+  .float-wa{
+    position:fixed; bottom:24px; right:24px; z-index:300;
+    width:60px;height:60px; border-radius:50%;
+    background:#3d1f2c;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 16px 34px -10px rgba(0,0,0,0.5);
+    transition:transform .25s ease;
+  }
+  .float-wa:hover{transform:scale(1.08);}
+  .float-wa svg{width:28px;height:28px; color:#fff;}
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 980px){
+    .nav-links{display:none;}
+    .nav-actions .icon-btn{display:none;}
+    .hamburger{display:flex;}
+    .mobile-menu{display:flex;}
+    .hero-inner, .about-inner, .cust-inner, .bulk-inner, .insta-inner, .contact-inner{
+      grid-template-columns:1fr;
+    }
+    .hero-inner{gap:50px;}
+    .hero-visual{order:-1;}
+    .about-img{order:-1;}
+    .cust-img{order:-1;}
+    .bulk-img{order:-1;}
+    .product-grid{grid-template-columns:repeat(2,1fr);}
+    .collections-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:190px;}
+    .coll-card, .coll-card:nth-child(1), .coll-card:nth-child(2), .coll-card:nth-child(3),
+    .coll-card:nth-child(4), .coll-card:nth-child(5), .coll-card:nth-child(6){
+      grid-column:span 1; grid-row:span 2;
+    }
+    .gallery-grid{columns:2 180px;}
+    .footer-grid{grid-template-columns:1fr; gap:32px;}
+    .section{padding:72px 20px;}
+    .contact-actions{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width: 560px){
+    .section{padding:60px 16px;}
+    .hero{padding:36px 16px 60px;}
+    .hero-badge{width:92px;height:92px; font-size:0.8rem; left:-14px; bottom:-14px;}
+    .product-grid{grid-template-columns:1fr 1fr;}
+    .gallery-grid{columns:2 150px;}
+    .contact-actions{grid-template-columns:1fr;}
+    .footer-bottom{flex-direction:column; align-items:flex-start;}
+    .lightbox{padding:16px;}
+    .lightbox-nav{width:38px;height:38px;}
+    .btn{padding:13px 22px; font-size:0.88rem;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+    .reveal{opacity:1; transform:none;}
+  }
+
+  :focus-visible{
+    outline:2.5px solid var(--mustard);
+    outline-offset:3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Oon<span>stitch</span></a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+      <a href="#customisation">Customisation</a>
+      <a href="#bulk">Bulk &amp; Corporate</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20know%20more%20about%20your%20crochet%20products." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.9.52 3.68 1.44 5.2L2 22l4.94-1.42A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.52 22 12S17.53 2 12.02 2zm0 18.13c-1.7 0-3.28-.5-4.6-1.36l-.33-.2-3.02.87.88-2.94-.22-.34a8.13 8.13 0 0 1-1.26-4.34c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.31-8.16 8.31z"/></svg>
+      </a>
+      <a class="icon-btn insta" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener" aria-label="Visit Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#shop">Shop</a>
+    <a href="#customisation">Customisation</a>
+    <a href="#bulk">Bulk &amp; Corporate</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <div class="mobile-actions">
+      <a class="btn btn-primary btn-sm btn-block" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20know%20more%20about%20your%20crochet%20products." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-ghost btn-sm btn-block" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Oonstitch · Crochet &amp; Beyond</span>
+      <h1>Handmade with love, stitched for you.</h1>
+      <p class="lede">Discover beautiful handmade crochet creations by Oonstitch — thoughtfully crafted for gifting, special moments and everything in between.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          Shop on Instagram
+        </a>
+        <a class="btn btn-ghost" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20know%20more%20about%20your%20crochet%20products." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.9.52 3.68 1.44 5.2L2 22l4.94-1.42A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.52 22 12S17.53 2 12.02 2zm0 18.13c-1.7 0-3.28-.5-4.6-1.36l-.33-.2-3.02.87.88-2.94-.22-.34a8.13 8.13 0 0 1-1.26-4.34c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.31-8.16 8.31z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <div class="hero-tags">
+        <span>Handmade in Delhi</span>
+        <span>Customisation available</span>
+        <span>Bulk &amp; corporate orders</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-frame">
+        <div class="hero-dot" aria-hidden="true"></div>
+        <img src="images/mug-sunflower-coaster.jpg" alt="Handmade crochet sunflower coaster with a blue ceramic mug, made by Oonstitch">
+        <div class="hero-badge">100%<br>Handmade</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stitch-divider" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="about section" id="about">
+  <div class="wrap about-inner">
+    <div class="about-img reveal">
+      <img src="images/coasters-pair.jpg" alt="Two handmade crochet sunflower coasters with maroon centres, made by Oonstitch">
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">About Oonstitch</span>
+      <h2>Made by hand. Made with heart.</h2>
+      <p>Oonstitch is a handmade crochet brand creating thoughtful and creative pieces with love, care and attention to detail.</p>
+      <p>From beautiful gifts to customised creations, Oonstitch brings a personal handmade touch to every order.</p>
+      <div class="about-stats">
+        <div><span>Delhi</span><small>Based in India</small></div>
+        <div><span>Online</span><small>Order via Instagram</small></div>
+        <div><span>Custom</span><small>Made just for you</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOP / COLLECTIONS ================= -->
+<section class="section" id="shop">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Explore</span>
+        <h2>Shop our collections</h2>
+      </div>
+      <p class="lede">Every piece is crocheted stitch by stitch — browse by the kind of piece you're looking for.</p>
+    </div>
+    <div class="collections-grid reveal">
+      <a class="coll-card" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+        <img src="images/luffy-plush.jpg" alt="Handmade crochet amigurumi soft toys by Oonstitch" loading="lazy">
+        <div class="coll-label"><h3>Amigurumi &amp; Soft Toys</h3><span>Characters, animals &amp; plushies</span></div>
+      </a>
+      <a class="coll-card" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+        <img src="images/coasters-flatlay.jpg" alt="Handmade crochet sunflower coasters and home décor by Oonstitch" loading="lazy">
+        <div class="coll-label"><h3>Coasters &amp; Home Décor</h3><span>For the everyday table</span></div>
+      </a>
+      <a class="coll-card" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+        <img src="images/crossbody-bag.jpg" alt="Handmade crochet striped crossbody bag by Oonstitch" loading="lazy">
+        <div class="coll-label"><h3>Bags &amp; Accessories</h3><span>Bags, earrings &amp; more</span></div>
+      </a>
+      <a class="coll-card" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+        <img src="images/flower-bouquet.jpg" alt="Handmade crochet flower bouquet by Oonstitch" loading="lazy">
+        <div class="coll-label"><h3>Flowers &amp; Bouquets</h3><span>Blooms that never wilt</span></div>
+      </a>
+      <a class="coll-card" href="#customisation">
+        <img src="images/bear-phone-case.jpg" alt="Customised handmade crochet phone case by Oonstitch" loading="lazy">
+        <div class="coll-label"><h3>Customised Gifts</h3><span>Made just for you</span></div>
+      </a>
+      <a class="coll-card" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+        <img src="images/baby-skirt.jpg" alt="Handmade crochet baby skirt by Oonstitch" loading="lazy">
+        <div class="coll-label"><h3>Baby &amp; Kids</h3><span>Soft pieces for little ones</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+<section class="section products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Featured</span>
+        <h2>A few favourites</h2>
+      </div>
+      <p class="lede">Every piece is one-of-a-kind and handmade to order — message us on WhatsApp for details.</p>
+    </div>
+    <div class="product-grid reveal" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CUSTOMISATION ================= -->
+<section class="section customisation" id="customisation">
+  <div class="wrap cust-inner">
+    <div class="cust-copy reveal">
+      <span class="cust-badge">#customisation available</span>
+      <span class="eyebrow">Personal &amp; unique</span>
+      <h2>Made just for you</h2>
+      <p class="lede">Looking for something personal and unique? Oonstitch creates customised crochet pieces made specially for you.</p>
+      <div class="cust-cta">
+        <a class="btn btn-mustard" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20enquire%20about%20a%20customised%20crochet%20order." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.9.52 3.68 1.44 5.2L2 22l4.94-1.42A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.52 22 12S17.53 2 12.02 2zm0 18.13c-1.7 0-3.28-.5-4.6-1.36l-.33-.2-3.02.87.88-2.94-.22-.34a8.13 8.13 0 0 1-1.26-4.34c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.31-8.16 8.31z"/></svg>
+          Request Customisation
+        </a>
+      </div>
+    </div>
+    <div class="cust-img reveal">
+      <img src="images/bear-phone-case.jpg" alt="Customised handmade crochet bear phone case with flower charm details, made by Oonstitch">
+    </div>
+  </div>
+</section>
+
+<!-- ================= BULK & CORPORATE ================= -->
+<section class="section bulk" id="bulk">
+  <div class="wrap bulk-inner">
+    <div class="bulk-img reveal">
+      <img src="images/bulk-order.jpg" alt="A bulk order of handmade crochet lions, turtles, bunnies, elephants and cars delivered by Oonstitch">
+    </div>
+    <div class="bulk-copy reveal">
+      <span class="eyebrow">For groups &amp; events</span>
+      <h2>Bulk &amp; corporate orders</h2>
+      <p class="lede">Bulk and corporate orders are accepted. Planning gifts for a group, event or corporate occasion? Get in touch with Oonstitch to discuss your bulk order requirements.</p>
+      <ul class="bulk-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Matching sets made for gifting in quantity</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Corporate gifting for events &amp; celebrations</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Every piece still handmade, stitch by stitch</li>
+      </ul>
+      <a class="btn btn-primary" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20enquire%20about%20a%20bulk%2Fcorporate%20order." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.9.52 3.68 1.44 5.2L2 22l4.94-1.42A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.52 22 12S17.53 2 12.02 2zm0 18.13c-1.7 0-3.28-.5-4.6-1.36l-.33-.2-3.02.87.88-2.94-.22-.34a8.13 8.13 0 0 1-1.26-4.34c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.31-8.16 8.31z"/></svg>
+        Enquire for Bulk Order
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSTAGRAM SHOP CTA ================= -->
+<section class="section insta-cta">
+  <div class="wrap insta-inner">
+    <div class="insta-copy reveal">
+      <span class="eyebrow">Order here</span>
+      <h2>Shop Oonstitch on Instagram</h2>
+      <div class="insta-handle">@oonstitch</div>
+      <p class="lede">Explore our latest handmade creations and place your order through Instagram.</p>
+      <a class="btn btn-mustard" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+        Visit Instagram Shop
+      </a>
+    </div>
+    <div class="insta-mosaic reveal">
+      <a href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener"><img src="images/flower-bouquet.jpg" alt="Crochet flower bouquet by Oonstitch on Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener"><img src="images/floral-earrings.jpg" alt="Crochet floral hoop earrings by Oonstitch on Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener"><img src="images/sunflower-appliques.jpg" alt="Crochet sunflower appliqués by Oonstitch on Instagram" loading="lazy"></a>
+      <a href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener"><img src="images/unicorn-amigurumi.jpg" alt="Crochet unicorn amigurumi by Oonstitch on Instagram" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Gallery</span>
+        <h2>A closer look at our work</h2>
+      </div>
+      <p class="lede">Real photographs of real handmade pieces — tap any image to view it larger.</p>
+    </div>
+    <div class="gallery-grid reveal" id="galleryGrid"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img src="" alt="" id="lightboxImg">
+  <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+</div>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section reviews">
+  <div class="wrap reveal">
+    <div class="stars" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    </div>
+    <span class="eyebrow">Kind words</span>
+    <h2>See what our customers say</h2>
+    <p class="lede">Explore our Instagram reviews and customer experiences.</p>
+    <a class="btn btn-primary" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODc4MzMxMTQ3OTI2NDUy?story_media_id=3162734355190020024_56665195531&stkn=MTNqZzRkenIyamF2aA==" target="_blank" rel="noopener">View Reviews</a>
+  </div>
+</section>
+
+<!-- ================= SOCIAL FOLLOW ================= -->
+<section class="section social">
+  <div class="wrap social-inner reveal">
+    <span class="eyebrow">Stay connected</span>
+    <h2>Follow Oonstitch</h2>
+    <div class="social-buttons">
+      <a class="social-card" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></span>
+        <span>Instagram</span>
+        <small>@oonstitch</small>
+      </a>
+      <a class="social-card" href="https://youtube.com/@oonstitch" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5V8.5L15.8 12l-6.2 3.5z"/></svg></span>
+        <span>YouTube</span>
+        <small>@oonstitch</small>
+      </a>
+      <a class="social-card" href="https://www.pinterest.com/oonstitch/" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.63 7.86 6.35 9.32-.09-.79-.17-2.01.03-2.87.19-.79 1.23-5.02 1.23-5.02s-.31-.63-.31-1.55c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.57 2.25-.87 3.5-.25 1.05.52 1.9 1.55 1.9 1.86 0 3.29-1.96 3.29-4.79 0-2.5-1.8-4.25-4.37-4.25-2.98 0-4.72 2.23-4.72 4.54 0 .9.34 1.86.78 2.39.09.1.1.2.07.3-.08.32-.25 1.01-.28 1.15-.04.18-.15.22-.34.13-1.26-.59-2.05-2.43-2.05-3.91 0-3.19 2.32-6.12 6.68-6.12 3.51 0 6.24 2.5 6.24 5.84 0 3.49-2.2 6.29-5.25 6.29-1.03 0-1.99-.53-2.32-1.17l-.63 2.4c-.23.88-.85 1.98-1.26 2.65.95.29 1.96.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></span>
+        <span>Pinterest</span>
+        <small>@oonstitch</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-inner">
+    <div class="contact-brand reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Oonstitch</h2>
+      <p>Crochet &amp; Beyond — an online handmade crochet brand based in Delhi, India. We'd love to hear from you.</p>
+      <div class="contact-actions" style="margin-top:32px;">
+        <a class="btn btn-mustard" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20know%20more%20about%20your%20crochet%20products." target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="btn btn-ghost" style="border-color:rgba(251,246,239,0.4); color:var(--cream);" href="tel:+917830302261">Call Now</a>
+        <a class="btn btn-ghost" style="border-color:rgba(251,246,239,0.4); color:var(--cream);" href="mailto:oonstitch@gmail.com">Email Us</a>
+        <a class="btn btn-ghost" style="border-color:rgba(251,246,239,0.4); color:var(--cream);" href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="contact-list-wrap reveal">
+      <ul class="contact-list">
+        <li>
+          <a href="tel:+917830302261">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></span>
+            7830302261
+          </a>
+        </li>
+        <li>
+          <a href="mailto:oonstitch@gmail.com">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+            oonstitch@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20know%20more%20about%20your%20crochet%20products." target="_blank" rel="noopener">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.9.52 3.68 1.44 5.2L2 22l4.94-1.42A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.52 22 12S17.53 2 12.02 2zm0 18.13c-1.7 0-3.28-.5-4.6-1.36l-.33-.2-3.02.87.88-2.94-.22-.34a8.13 8.13 0 0 1-1.26-4.34c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.31-8.16 8.31z"/></svg></span>
+            +91 7830302261
+          </a>
+        </li>
+        <li>
+          <a href="#" style="border-bottom:none;">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            Delhi, India
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-logo">Oon<span>stitch</span></div>
+      <p>Crochet &amp; Beyond. A handmade crochet brand from Delhi, India — creating thoughtful pieces, stitch by stitch.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/oonstitch/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://youtube.com/@oonstitch" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5V8.5L15.8 12l-6.2 3.5z"/></svg></a>
+        <a href="https://www.pinterest.com/oonstitch/" target="_blank" rel="noopener" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.63 7.86 6.35 9.32-.09-.79-.17-2.01.03-2.87.19-.79 1.23-5.02 1.23-5.02s-.31-.63-.31-1.55c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.57 2.25-.87 3.5-.25 1.05.52 1.9 1.55 1.9 1.86 0 3.29-1.96 3.29-4.79 0-2.5-1.8-4.25-4.37-4.25-2.98 0-4.72 2.23-4.72 4.54 0 .9.34 1.86.78 2.39.09.1.1.2.07.3-.08.32-.25 1.01-.28 1.15-.04.18-.15.22-.34.13-1.26-.59-2.05-2.43-2.05-3.91 0-3.19 2.32-6.12 6.68-6.12 3.51 0 6.24 2.5 6.24 5.84 0 3.49-2.2 6.29-5.25 6.29-1.03 0-1.99-.53-2.32-1.17l-.63 2.4c-.23.88-.85 1.98-1.26 2.65.95.29 1.96.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#customisation">Customisation</a></li>
+        <li><a href="#bulk">Bulk &amp; Corporate</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+917830302261">7830302261</a></li>
+        <li><a href="mailto:oonstitch@gmail.com">oonstitch@gmail.com</a></li>
+        <li><a href="#" style="cursor:default;">Delhi, India</a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm" style="margin-top:18px;" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20know%20more%20about%20your%20crochet%20products." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Oonstitch. All rights reserved.</span>
+    <span>Crochet &amp; Beyond</span>
+  </div>
+</footer>
+
+<!-- floating whatsapp -->
+<a class="float-wa" href="https://wa.me/917830302261?text=Hi%20Oonstitch%2C%20I%27d%20like%20to%20know%20more%20about%20your%20crochet%20products." target="_blank" rel="noopener" aria-label="Chat with Oonstitch on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.9.52 3.68 1.44 5.2L2 22l4.94-1.42A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.52 22 12S17.53 2 12.02 2zm0 18.13c-1.7 0-3.28-.5-4.6-1.36l-.33-.2-3.02.87.88-2.94-.22-.34a8.13 8.13 0 0 1-1.26-4.34c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.31-8.16 8.31z"/></svg>
+</a>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- Mobile menu ---------- */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+}));
+
+/* ---------- Reveal on scroll ---------- */
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
+
+/* ---------- Product data (real uploaded photos only) ---------- */
+const products = [
+  { name:"Sunflower Coaster Set", img:"images/coasters-stacked.jpg", desc:"Hand-crocheted coasters with a blooming sunflower trim — lovely for gifting or everyday use." },
+  { name:"Doraemon Amigurumi", img:"images/doraemon-amigurumi.jpg", desc:"A tiny hand-stitched Doraemon, crocheted stitch by stitch as a keepsake or gift." },
+  { name:"Unicorn Amigurumi", img:"images/unicorn-amigurumi.jpg", desc:"A soft, huggable crochet unicorn with delicate pastel detailing." },
+  { name:"Luffy Plush Doll", img:"images/luffy-plush.jpg", desc:"A plush crochet doll inspired by a beloved anime character, made entirely by hand." },
+  { name:"Blue Truck Plush Set", img:"images/truck-plushies.jpg", desc:"Adorable crochet truck plushies, hand-stitched detail by detail." },
+  { name:"Striped Crossbody Bag", img:"images/crossbody-bag.jpg", desc:"A handwoven crochet crossbody bag in warm rust and cream stripes." },
+  { name:"Lavender Bow Bag", img:"images/bow-bag.jpg", desc:"A dainty bow-shaped crochet handbag, finished with a soft lavender hue." },
+  { name:"Floral Hoop Earrings", img:"images/floral-earrings.jpg", desc:"Delicate crochet hoop earrings finished with tiny handmade flowers." },
+  { name:"Cactus Tissue Box Cover", img:"images/cactus-tissue-cover.jpg", desc:"A cheerful crochet tissue box cover with hand-stitched cactus appliqués." },
+  { name:"Crochet Flower Bouquet", img:"images/flower-bouquet.jpg", desc:"A everlasting bouquet of hand-crocheted blooms, arranged in a vase." },
+];
+
+const productGrid = document.getElementById('productGrid');
+products.forEach(p => {
+  const card = document.createElement('div');
+  card.className = 'product-card';
+  const msg = encodeURIComponent(`Hi Oonstitch, I'm interested in the ${p.name}. Please share more details.`);
+  card.innerHTML = `
+    <div class="product-img"><img src="${p.img}" alt="${p.name} — handmade crochet by Oonstitch" loading="lazy"></div>
+    <div class="product-body">
+      <h3>${p.name}</h3>
+      <p>${p.desc}</p>
+      <span class="price-tag">Price on enquiry</span>
+      <a class="product-cta" href="https://wa.me/917830302261?text=${msg}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.47 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12.02 2C6.5 2 2.02 6.48 2.02 12c0 1.9.52 3.68 1.44 5.2L2 22l4.94-1.42A9.94 9.94 0 0 0 12.02 22C17.53 22 22 17.52 22 12S17.53 2 12.02 2zm0 18.13c-1.7 0-3.28-.5-4.6-1.36l-.33-.2-3.02.87.88-2.94-.22-.34a8.13 8.13 0 0 1-1.26-4.34c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16 0 4.5-3.66 8.31-8.16 8.31z"/></svg>
+        Enquire on WhatsApp
+      </a>
+    </div>`;
+  productGrid.appendChild(card);
+});
+
+/* ---------- Gallery (all real uploaded photos) ---------- */
+const galleryImages = [
+  { img:"images/mug-sunflower-coaster.jpg", alt:"Blue mug on a handmade crochet sunflower coaster" },
+  { img:"images/coasters-stacked.jpg", alt:"Two sunflower crochet coasters stacked together" },
+  { img:"images/coasters-flatlay.jpg", alt:"Flat lay of multiple handmade sunflower crochet coasters" },
+  { img:"images/coasters-pair.jpg", alt:"Close-up of two maroon and yellow crochet coasters" },
+  { img:"images/keychain-pouches-hanging.jpg", alt:"Mini crochet pouch keychains in pink, orange and green" },
+  { img:"images/keychain-pouches-stacked.jpg", alt:"Stack of mini crochet pouch keychains" },
+  { img:"images/baby-skirt.jpg", alt:"Handmade crochet baby skirt in cream and beige" },
+  { img:"images/floral-earrings.jpg", alt:"Teal and white crochet floral hoop earrings" },
+  { img:"images/doraemon-amigurumi.jpg", alt:"Handmade Doraemon crochet amigurumi held in hand" },
+  { img:"images/crossbody-bag.jpg", alt:"Striped crochet crossbody bag hanging on wall" },
+  { img:"images/unicorn-amigurumi.jpg", alt:"Handmade crochet unicorn amigurumi held in hand" },
+  { img:"images/truck-plushies.jpg", alt:"Blue crochet truck plush toys stacked together" },
+  { img:"images/cactus-tissue-cover.jpg", alt:"Crochet tissue box cover with cactus appliqués" },
+  { img:"images/luffy-plush.jpg", alt:"Handmade crochet plush doll inspired by an anime character" },
+  { img:"images/bow-bag.jpg", alt:"Lavender crochet bow-shaped handbag" },
+  { img:"images/sunflower-appliques.jpg", alt:"Two crochet sunflower appliqués held in hand" },
+  { img:"images/bear-phone-case.jpg", alt:"Grey and lavender crochet bear phone case" },
+  { img:"images/flower-bouquet.jpg", alt:"Bouquet of handmade crochet flowers in a vase" },
+  { img:"images/bulk-order.jpg", alt:"Bulk order of crochet lions, turtles, bunnies, elephants and cars" },
+];
+
+const galleryGrid = document.getElementById('galleryGrid');
+galleryImages.forEach((g, i) => {
+  const item = document.createElement('div');
+  item.className = 'gallery-item';
+  item.dataset.index = i;
+  item.innerHTML = `<img src="${g.img}" alt="${g.alt}" loading="lazy">`;
+  galleryGrid.appendChild(item);
+});
+
+/* ---------- Lightbox ---------- */
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+let currentIndex = 0;
+
+function openLightbox(index){
+  currentIndex = index;
+  updateLightbox();
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function updateLightbox(){
+  const g = galleryImages[currentIndex];
+  lightboxImg.src = g.img;
+  lightboxImg.alt = g.alt;
+}
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+galleryGrid.addEventListener('click', (e) => {
+  const item = e.target.closest('.gallery-item');
+  if(item) openLightbox(parseInt(item.dataset.index));
+});
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lightboxPrev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  updateLightbox();
+});
+document.getElementById('lightboxNext').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  updateLightbox();
+});
+lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => {
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLightbox();
+  if(e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+  if(e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+});
+</script>
+</body>
+</html>
